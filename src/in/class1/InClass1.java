@@ -23,11 +23,24 @@ public class InClass1 {
         double avg = total/aRRay.length;
         return avg;
     }
+    
+    public static double calcMax(int[] aRRay){
+        double max=0;
+        for(int i=0; i<aRRay.length; i++){
+            if( max > aRRay[i]){
+                max = max;
+            }
+            else{
+            max = aRRay[i];
+            }
+        }
+        return max;
+    }
     public static void main(String[] args) {
         
         int[] grades = {45,89,56,87,49,64,54,87,95,45};
         System.out.println("The average mark is " + calcAvg(grades));
-        
+        System.out.println("The maximum grade is " + calcMax(grades));
 
     }
 
